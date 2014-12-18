@@ -21,7 +21,6 @@ public class GenerateurCleFrame extends JFrame implements ActionListener {
 	private JCheckBox boxDigit;
 	private JSpinner rangePass;
 	private SpinnerNumberModel model;
-	private JList<String> list;
 	private Key keygen;
 
 	public GenerateurCleFrame() {
