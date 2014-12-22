@@ -1,3 +1,6 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
 public class GenerateurCle {
 
 	public static void main(String[] args) {
@@ -9,8 +12,9 @@ public class GenerateurCle {
 		System.out.println(cle1.toString());
 		System.out.println(cle2.toString());
 		System.out.println(cle3.toString());
+		cle.write();
 		
-		GenerateurCleFrame frame = new GenerateurCleFrame();
-		frame.setVisible(true);
+//		GenerateurCleFrame frame = new GenerateurCleFrame();
+//		frame.setVisible(true);
 	}
 }

@@ -1,3 +1,6 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class Key {
 	private String cle;
 	private boolean upper = true;
@@ -66,5 +69,17 @@ public class Key {
 
 	public void setDigit(boolean digit) {
 		this.digit = digit;
+	}
+
+	public void write() {
+		try {
+			FileWriter nameFile = new FileWriter("src/cle_courante");
+			nameFile.write(this.getCle());
+			nameFile.close();
+		} catch (IOException e) {
+			System.out.println("erreur");
+		}
+		
+		
 	}
 }
